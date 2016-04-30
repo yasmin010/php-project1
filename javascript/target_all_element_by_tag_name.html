@@ -1,0 +1,73 @@
+<DOCTYPE html>
+<html>
+<head>
+<title> functionss </title>
+<meta charset="utf-8">
+<script type="text/javascript">
+function tages(){
+	var par = document.getElementsByTagName("p");
+	//var textInMiddleParagraph = par[1].innerHTML;
+	for (var i = 0; i < par.length; i++) { 
+	  par[i].style.fontFamily = "Verdana, Geneva, sans-serif"; 
+	}
+
+}
+
+function colortable(){
+	var y = document.getElementsById("table_div");
+	var cells = document.getElementsByTagName("td");
+	for (var j = 0; j < cells.length; j++) {
+		 cells[j].style.backgroundColor = "pink";
+	}
+
+}
+</script>
+
+</head>
+<style>
+table th{
+	background-color:#CCC;
+	}
+table {
+	border: 2px solid;
+	width: 80%;
+}
+</style>
+<body>
+	<p onClick="tages();"> welcome !</p>
+	<p onClick="tages();"> to my web page</p>
+	<p onClick="tages();"> the end </p>
+
+	<div >
+     <table id="table_div" border="2">
+     	<tr>
+     		<th>name</th>
+     		<th> class </th>
+     		<th> email </th>
+
+     	</tr>
+     	
+     	<tr>
+     	    <td onClick="colortable();">ahmed</td>
+     	    <td onClick="colortable();"> 1/1</td>
+     	    <td onClick="colortable();"> ahmed@gmail.com</td>
+     	</tr>
+     	<tr>
+     		<td onClick="colortable();">mohamed</td>
+     		<td onClick="colortable();"> 1/1</td>
+     	    <td onClick="colortable();"> mohamed@gmail.com</td>
+     	</tr>
+     	<tr>
+     		<td onClick="colortable();">osama</td>
+     		<td onClick="colortable();"> 1/1</td>
+     	    <td onClick="colortable();"> osama@gmail.com</td>
+     	</tr>
+     	
+
+     	
+
+     </table>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+ <input type="text" id="myText" value="enter firstnum">
+<input type="text" id="Text1" value="enter firstnum">
+
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myText").value;
+    document.getElementById("demo").innerHTML = x;
+    var y = document.getElementById("Text1").value;
+    document.getElementById("demo").innerHTML = y;
+     x += y; 
+    document.getElementById("demo").innerHTML = x;
+
+}
+</script>
+
+</body>
+</html>

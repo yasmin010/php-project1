@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Learn Center | Login |Teacher </title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="validatetecher.js">
+	</script>
+</head>
+<style>
+body{
+	background-color: #ddd;
+}
+ br{
+ 	display: block;
+ 	
+ }
+nav{
+	background-color: #0070FF;
+	font-size: 20px;
+    width: 1350px;
+    height: 30px;
+}
+h2{
+	text-align: center;
+}
+
+.login_parent{
+	border-radius: 30px;
+	float: left;
+	width: 730px;
+	height: 600px;
+	background-color: white;
+
+}
+
+.login1{
+       margin-left: 30px;
+       padding-bottom: 40px;
+       margin-top: 40px;
+
+
+}
+
+fieldset{
+	border-radius: 30px;
+	float: right;
+	width: 40%;
+	height: 600px;
+
+}
+input{
+	border-radius: 30px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	height: 20px;
+}
+.b{
+	margin-left: 200px;
+}
+.forms{
+	margin-left: 90px;
+}
+
+a{
+
+	padding-left:100px;
+	color:#363636;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:hover{
+	color: blue;
+}
+</style>
+<body>
+	<div id="navigation">
+		<nav>
+			<ul id="menu">
+				<a href="courses.html">Home</a>
+			    <a href="login.html">Login</a>
+			    <a href="teachers.html">Teachers</a>
+			    <a href="contact.html">Contacts</a>
+		    </ul>
+		</nav>
+	</div>
+
+	<img src="back.jpg" width="1350px";
+	height="250px">
+
+	</fieldset>
+
+	<fieldset>
+		<h2>logins</h2>
+		<p class="login1">
+		<img src="parent.jpg" width="30%px" height="30%px"> Parent
+		<img src="teacher.jpg" width="30%px" height="30%px"> Teacher
+		<img src="school.jpg" width="30%px" height="30%px"> School
+		<img src="child.jpg" width="30%px" height="30%px"> Student
+		</p>
+	</fieldset>
+
+	<fieldset class="login_parent">
+		<h2>logins</h2>
+		<form name="teacher" onSubmit="return validation_teacher();">
+		<p class="forms">
+			
+			<span>Id: </span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" name="id" id="id_t" onFocus="this.style.backgroundColor='pink';" onBlur="this.style.backgroundColor='white';">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+			<span>Teacher_num: </span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" name="id" id="num_t" onFocus="this.style.backgroundColor='pink';" onBlur="this.style.backgroundColor='white';">
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+			<span>Password: </span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="password" name="password" id="pass_t" onFocus="this.style.backgroundColor='pink';" onBlur="this.style.backgroundColor='white';">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+			<span>Confirm passowrd: </span>
+			<input type="password" name="re_password" id="passwod_t" onFocus="this.style.backgroundColor='pink';" onBlur="this.style.backgroundColor='white';"><br>
+			<span>Email </span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" name="mail" id="mail_t" onFocus="this.style.backgroundColor='pink';" onBlur="this.style.backgroundColor='white';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+			<input class="b" type="submit" value="Rigister">
+		</p>
+		</form>
+	</fieldset>
+</body>
+</html>

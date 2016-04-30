@@ -1,0 +1,55 @@
+nav{
+	background-color: #556677;
+	font-size: 20px;
+    width: 1350px;
+    height: 30px;
+}
+a{
+
+	padding-left:100px;
+	color:#363636;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:hover{
+	color: #44fbfe;
+}
+
+img{
+	width: 1350px;
+	height: 400px;
+}
+#left_holder{
+	height: 458px;
+	width: 180px;
+	position: absolute;
+	left: 8px;
+	top: 0px;
+
+
+}
+#right_holder
+{
+	height: 458px;
+	width: 180px;
+	position: absolute;
+	right: 8px;
+	top: 0px;
+
+}
+.left{
+	height: 50px;
+	width: 58px;
+	position: absolute;
+	top: 40%;
+	left: 8px;
+
+}
+.right{
+	height: 50px;
+	width: 58px;
+	position: absolute;
+	top: 40%;
+	right: 8px;
+
+}

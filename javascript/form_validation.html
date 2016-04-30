@@ -1,0 +1,120 @@
+<DOCTYPE html>
+<html>
+<head>
+<title> functionss </title>
+<meta charset="utf-8">
+<script type="text/javascript">
+    function testvalue(){
+    	var content = document.getElementById("firstname");
+    	if (content.value.length == 0) {
+    		alert("please enter name"); 
+    		content.foucus();
+    		return false;
+    	};
+    }
+
+    function checkstate(){
+    	var state = document.getElementById("states");
+    	if (state.selectedIndex == 0) {
+    		alert("please select the state");
+    		return false;
+    	};
+    }
+
+    function checkradio(){
+    	var radios = document.getElementsByName("r1");
+    	for (var i = 0; i < radios.length; i++) {
+    		if (radios[i].checked ) {
+    			return true;
+    		}
+    		alert("please check radio button");
+    		return false;
+    	};
+    }
+
+    function checkzipvalue(){
+    	var zibed = document.getElementById("zib");
+    	if (zibed.value.length < 5) {
+    		alert("Please enter a 5-digit code.");      return false;
+    	};
+    	 for (var y = 0; y <= 4; y++) { 
+    	       var thisChar = parseInt(zibed[y]); 
+    	           if (isNaN(thisChar)) {
+    	             alert("Please enter only numbers.");      
+    	              return false;    
+    	               }    
+    	           } 
+    }
+
+// function to validate email
+    function checkmail(){
+     var addressIsLegal = true; 
+      var eEntered = document.getElementById("mal").value; 
+          if (eEntered.indexOf(" ") !== -1) {        addressIsLegal = false;     
+          }   
+       if (eEntered.indexOf("@") < 1 || eEntered.indexOf("@") > eEntered.length - 5) 
+       { 
+                 addressIsLegal = false; 
+                     } 
+        if (eEntered.indexOf(".") - eEntered.indexOf("@") < 2 || eEntered.indexOf(".") > eEntered.length - 3) { 
+             addressIsLegal = false; 
+                } 
+                 if (addressIsLegal === false) {       alert("Please insert correct email address"); 
+                       return false; 
+}
+}
+
+// another way to validate mail
+      function validatemail(){
+         var eEnter = document.getElementById("mals").value; 
+           var regex = /^[\w\-\.\+]+\@[a-zA-Z0-9\. \-]+\.[a-zA-z0-9]{2,4}$/; 
+             if (!(eEnter.match(emailCorrectPattern))) { 
+                 alert("Please correct email address"); 
+                     return false; 
+                 }
+      }
+</script>
+</head>
+<body>
+	<form onSubmit="return testvalue();">
+		please enter first name:
+		<input type="text" id="firstname" onFocus="this.style.backgroundColor='pink';" onBlur="this.style.backgroundColor='white';">
+		<input type="submit" value="submitform">
+	</form>
+
+	<form onSubmit="return checkstate();">
+		<select id="states">
+			<option value="" selected="selected"> select astate</option>
+			<option value="single">sigle</option>
+			<option value="maried">maried</option>
+		</select>
+		  <input type="submit" value="Submit state">
+	</form>
+    
+    <form onSubmit="return checkradio();">
+    	<input type="radio" value="cat" name="r1"> cat <br>
+    	<input type="radio" value="bat" name="r1"> bat <br>
+    	<input type="radio" value="hat" name="r1"> hat <br>
+    	<input type="submit" value="submit radio">
+
+    </form>
+
+    <form onSubmit="return checkzipvalue();">
+		please enter zibcode :
+		<input type="text" id="zib" onFocus="this.style.backgroundColor='pink';" onBlur="this.style.backgroundColor='white';">
+		<input type="submit" value="form">
+	</form>
+
+    <form onSubmit="return checkmail();">
+		please enter email :
+		<input type="mail" id="mal">
+		<input type="submit" value="submitail">
+	</form>
+
+    <form onSubmit="return validatemail();">
+        please enter email :
+        <input type="mail" id="mals">
+        <input type="submit" value="submitmails">
+    </form>
+</body>
+</html>

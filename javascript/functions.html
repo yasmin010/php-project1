@@ -1,0 +1,66 @@
+<DOCTYPE html>
+<html>
+<head>
+<title> functionss </title>
+<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+	function telltime(){
+		var time = new Date();
+		var hour = time.getHours();
+		var minit = time.getMinutes();
+		alert("the time is " + hour + ":" + minit );	
+
+	}
+
+	function greeting(message){
+		document.write(message + "<br>");
+
+	}
+	var ss = "hello at my page";
+
+	telltime();
+	greeting(ss);
+
+
+	 
+	 var now = new Date(); 
+    var dayArr = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    var day = now.getDay();
+    if (dayArr[day] == "Sun") {};
+   alert("opps! you must recieve an email from company");
+
+
+   // switchcase
+   switch( dayArr[day] ){
+   	case "Sun" :
+   	alert("hi today is sun");
+   	break;
+   	case "Mon" :
+   	alert("hi today is mon");
+   	break;
+   	default :
+   	alert("oh shoot me !");
+   }
+
+   //while loop 
+   var y = 0;
+   while(y <= 3){
+   	alert(y);
+   	y++;
+   }
+
+   //dowhile loop
+   do{
+    document.write(y + "<br>");
+    y ++;
+  }
+    while(y <= 9);
+
+    
+    
+   
+	</script>
+</body>
+</html>

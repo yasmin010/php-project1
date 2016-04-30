@@ -1,0 +1,49 @@
+ <DOCTYPE html>
+	<html>
+	<head>
+		<title> find segment at javascript</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script type="text/javascript">
+
+		// search for segment 
+		var text = prompt("please enter your text");
+		  for (var i = 0; i < text.length; i++) {    if (text.slice(i, i + 11) === "my web page") { 
+		      text = text.slice(0, i) + "website" + text.slice(i + 11); 
+		      document.write(text + "<br>");  
+		       }  }
+
+
+		       // another way to get the first char in word 
+		       var firstchar = text.charAt(0);
+		       document.write(firstchar + "<br>");
+
+		       // search for last char
+		       var lastchar = text.charAt(text.length - 1);
+		         document.write(lastchar + "<br>");
+		         // search for !
+
+		         for (var y = 0; y < text.length; y++) {
+		         	if (text.charAt(y) === "!") {
+		         		 alert("Exclamation point found!"); 
+		         		     break;
+		         	};
+		         };
+
+
+		         // another way to replase string with another one 
+		         
+		 text = text.replace("website", " javascript");
+		  document.write(text + "<br>");
+
+		  // when to replace all text with another one 
+		  text = text.replace(/website/g , "hi jasoo");
+		    document.write(text + "<br>");
+
+
+
+		</script>
+
+	</body>
+	</html>

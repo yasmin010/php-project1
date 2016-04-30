@@ -1,0 +1,35 @@
+function idvalue(){
+    	var id_value = document.getElementById("ids");
+    	var pass = document.getElementById("password");
+
+    	if (id_value.value == "") {
+    		alert("Please enter id.");
+    		id_value.foucus();
+    		      return false;
+    	}
+    	if (id_value.value.length < 5) {
+    		alert("id should be 5 char..");
+    		id_value.foucus();
+    		      return false;
+    	};
+    	 for (var y = 0; y <= 4; y++) {  
+    	           if (isNaN(id_value.value[y])) {
+    	             alert("password must contain chars and number.");  
+    	              id_value.foucus();
+    	              return false;    
+    	               }    
+    	           } 
+
+    	        if (pass.value == "") {
+    		alert("Please enter password.");
+    		pass.foucus();
+    		      return false;
+    	}
+    	if (pass.value.length <= 15) {
+    		alert("password should be minimum 15 char.");
+    		pass.foucus();
+    		      return false;
+    	}
+
+
+    }

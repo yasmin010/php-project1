@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>itroduction in w3school</title>
+	<meta charset="utf-8">
+	<script type="text/javas{cript">
+		function validate(){
+			
+			  
+		}
+		</script>
+</head>
+<style>
+
+</style>
+<body>
+	<h1> what java script do?</h1>
+	<p id="demo"> java script can change content </p>
+	<button type="button" onclick="document.getElementById('demo').innerHTML = 'hello java script!'">Click me </button>
+     
+     <h1>javascript can change image </h1>
+	<img id="light"  src="download.jpg" width="100" height="180">
+	<button tybe="button" onclick="var image = document.getElementById('light');
+    if (image.src.match('lamb1')) {
+        image.src = 'download.jpg';
+    } else {
+        image.src = 'lamb1.jpg';
+    }"> click now</button>
+
+	<h1> javascript can change html style</h1>
+	<p id="p1"> i love java script </p>
+	<button type="button" onclick="document.getElementById('p1').style.fontSize = '50px';"> click here</button>
+	<h1> java script can validate date</h1>
+	<p> please input number between 1 t0 5</p>
+	
+		<input type="text" id="date">
+		<button type="button" onclick="var y = document.getElementById('date').value;
+			
+			if (isNaN(y) || y< 1 || y > 5){
+				 alert('please insert number');
+			}
+			else{
+				alert('input ok');
+			}"> click </button>
+		<p id="p2"></p>
+	
+
+
+
+</body>
+</html>

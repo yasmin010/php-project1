@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> slideshow with  java script and html</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+	var imagecount = 1;
+	var total = 5;
+
+	function slide(x){
+		var image = document.getElementById("img");
+		imagecount = imagecount + 1;
+
+            if (imagecount > total) {
+            	imagecount = 1;
+
+            }
+            if (imagecount < 1) {
+            	imagecount = total;
+
+            };
+		image.src = "im" + imagecount + ".jpg";
+
+
+	}
+	window.setInterval(function slideA(){
+		var image = document.getElementById("img");
+		imagecount = imagecount + 1;
+
+            if (imagecount > total) {
+            	imagecount = 1;
+
+            }
+            if (imagecount < 1) {
+            	imagecount = total;
+
+            };
+		image.src = "im" + imagecount + ".jpg";
+
+
+	},5808);
+
+	</script>
+</head>
+<style>
+img{
+	width: 1350px;
+	height: 400px;
+}
+#left_holder{
+	height: 458px;
+	width: 180px;
+	position: absolute;
+	left: 8px;
+	top: 0px;
+
+
+}
+#right_holder
+{
+	height: 458px;
+	width: 180px;
+	position: absolute;
+	right: 8px;
+	top: 0px;
+
+}
+.left{
+	height: 50px;
+	width: 58px;
+	position: absolute;
+	top: 40%;
+	left: 8px;
+
+}
+.right{
+	height: 50px;
+	width: 58px;
+	position: absolute;
+	top: 40%;
+	right: 8px;
+
+}
+</style>
+<body onLoad="slideA()">
+   <div id="container">
+   	<img id="img" src="im5.jpeg" name="slideshow" >
+   </div>
+
+   <div id="left_holder">
+   	<img src="left.jpg" class="left" onClick="slide(-1)">
+   </div>
+
+   <div id="right_holder">
+   	<img src="right.jpg"class="right" onClick="slide(1)">
+   </div>
+   	
+   		
+   		
+
+
+</body>
+</html>

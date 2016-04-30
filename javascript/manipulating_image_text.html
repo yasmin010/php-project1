@@ -1,0 +1,35 @@
+<DOCTYPE html>
+<html>
+<head>
+<title> functionss </title>
+<meta charset="utf-8">
+<style>
+.hidden {
+	display:none;
+}
+.makebig{
+	font-size: 1em;
+
+}
+</style>
+<script type="text/javascript">
+function makeinvisable() { 
+   document.getElementById("invisable").className = "hidden"; 
+
+
+    }
+
+     function makeBig() { 
+        document.getElementById("small_big") .style.fontSize= "2em";
+         }
+
+    </script>
+</head>
+
+<body>
+	<img src="im.jpg" id="invisable" onClick="makeinvisable();">
+
+	<p id="small_big" onClick="makeBig();"> hi! welcome to y webpage.<a href="javascript:void(0);"><em>click to big</em></a></p>
+</body>
+
+</html>

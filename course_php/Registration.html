@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Registration</title>
+
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			body{
+				background:url(Work_Mufic/java/New%20Programmes/JSP/web/3.jpg);
+				margin:auto;
+
+				}
+        	form{
+				background:url(Work_Mufic/java/New%20Programmes/JSP/web/form.jpg);
+				border-radius:8px;
+				box-shadow:inset 0px 0px 10px;
+				border-radius:5px solid #FFF;
+				width:340px;
+				height:420px;
+				margin-top:200px;
+				margin-left:70px;
+				padding:15px;
+				}
+			form label{
+				color:#333;
+				font:"Arial Rounded MT Bold";
+				font-size:18px;
+				
+			}
+			form input {
+				border-radius:5px;
+				padding:6px;	
+				}
+			form #b1{
+				float:left;
+				padding-left:30px;
+				
+			}
+
+			form #b2{
+				float:right;
+				padding-right:180px;
+				
+			}
+		</style>
+</head>
+<body>
+
+	<form action="elsakka" method="get">
+
+    	<label> First Name :</label><br/>
+        <input type="text" size="30" name="text_fn" required> <br/>
+        <label> Last Name :</label><br/>
+        <input type="text" size="30" name="text_ln" required> <br/>
+        <label> ID :</label><br/>
+        <input type="text" size="30" name="text_id" required> <br/>
+        <label> E-mail :</label><br/>
+        <input type="text" size="30" name="text_email" required><br/>
+        <label> Adress :</label><br/>
+        <input type="text" size="30" name="text_adress" required><br/><br/>
+        <label> Country :</label>
+        
+		<select> <br/>
+	        <option>USA</option>
+            <option>EGYPT</option>
+            <option>FRANCE</option>
+            <option>U.K</option>
+        </select><br/><br/><br/>
+        <div id="b1">
+        <input type="submit" name="Submit "/>
+        </div>
+        <div id="b2">
+        <input type="reset" name="Reset "/>
+        </div>
+     </form>
+</body>
+</html>

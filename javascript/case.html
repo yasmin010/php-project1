@@ -1,0 +1,60 @@
+ <DOCTYPE html>
+	<html>
+	<head>
+		<title> array at javascript</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script type="text/javascript">
+
+		var mesglower = "HEllo To My page";
+		mesglower = mesglower.toLowerCase();
+		document.write(mesglower + "<br>");
+
+		var mesgupper = "hello to my page";
+		mesgupper = mesgupper.toUpperCase();
+		document.write(mesgupper + "<br>");
+
+        var checkname = prompt("please enter your name to check");
+        checkname = checkname.toLowerCase();
+		var names = ["yasmin", "mona", "amany","nona"];
+		for (var i = 0; i < names.length; i++) {
+			if (checkname === names[i]) {
+				alert("thier are identical");
+			} else{};
+			
+		};
+       //to convert first char to upper case and other to lower case
+		var firstchar = checkname.slice(0,1);
+		var otherchars = checkname.slice(1);
+		firstchar = firstchar.toUpperCase();
+		otherchars = otherchars.toLowerCase();
+		var fullword =firstchar +otherchars;
+		document.write(fullword + "<br>");
+
+        // slice three first num
+		var month = prompt("Enter a month");
+		var charsinmonth = month.length;
+		if (charsinmonth > 3) {
+			monthbrev = month.slice(0,3);
+			document.write(monthbrev + "<br>");
+		};
+
+		// check if their is adouble space in atext
+		
+		var str = prompt("enter some text");
+		numchars = str.length;
+		for (var y = 0; y < numchars; y++) {
+			if (str.slice(y, y + 2) === " ") {
+				alert("no double spaces!");
+				break;
+			} 
+		};
+
+
+
+
+		</script>
+
+	</body>
+	</html>

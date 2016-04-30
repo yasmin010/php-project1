@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+<meta href="utf-8">
+<title>Untitled Document</title>
+<script type="text/javascript">
+function click(){
+//var x = prompt("enter num1").valueOf();
+//var y = prompt("enter num2").valueOf();
+//var x = document.getElementById("text1");
+//var y = document.getElementById("text2");
+
+//var z = (x.value) + (y.value);
+
+//document.write("hello" + z);
+var x = document.getElementById("text1").value;
+    document.getElementById("demo").innerHTML = x;
+var y = document.getElementById("text1").value;
+    document.getElementById("demo").innerHTML = y;
+}
+
+click();
+</script>
+</head>
+
+<body>
+<form >
+<input type="text" id="text1" />
+<input type="text" id="text2" />
+<button onclick="click()">calc</button>
+<p id="demo"></p> 
+</form>
+
+</body>
+</html>
